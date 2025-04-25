@@ -100,6 +100,22 @@ The application allows users to submit their name, email address, and a short fe
     ```bash
     npm run dev
     # or
+
+
+## Deployment
+
+This project is deployed on Netlify.  Here's a general outline of the deployment process:
+
+1.  **Push to GitHub:** Push your code to a public GitHub repository.
+2.  **Connect to Netlify:**
+    * Sign up/log in to Netlify.
+    * Create a new site and select "Import an existing project".
+    * Choose your GitHub repository.
+3.  **Configure build settings:**
+    * Build command: `next build`
+    * Publish directory: `.next`
+4.  **Set environment variables:** Add `NEXT_PUBLIC_SUPABASE_URL` and `NEXT_PUBLIC_SUPABASE_ANON_KEY` in Netlify's site settings.
+5.  **Deploy:** Netlify will build and deploy your application.
     yarn dev
     # or
     pnpm dev
